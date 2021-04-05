@@ -1,0 +1,72 @@
+/* 取消所有标签自带的样式 ---------------------------------------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* 取消input[type="number"]默认样式 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+/* flex布局样式 ---------------------------------------------------*/
+.font-cen{
+    text-align: center;
+}
+.font-right{
+    text-align: right;
+}
+.font-left{
+    text-align: left;
+}
+.header-h{
+    height: 64px;
+    line-height: 64px;
+}
+.flex{
+    display:flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.flex-bd-col{
+    flex: 1;
+}
+.flex-ju-be{
+    justify-content: space-between;
+}
+.flex-ju-cen{
+    justify-content: center;
+}
+.flex-ju-ar{
+    justify-content: space-around;
+}
+.flex-item-con{
+    align-items: center;
+}
+
+/* 鼠标变成点击的手 ---------------------------------------------------*/
+.cursor{
+    cursor: pointer;
+}
+
+/* 字体 --------------------------------------------------- 自定义 */
+/* 一级字体 */
+.first-font{
+   
+}
+/* 二级字体 */
+.secondary-font{
+
+}
+/* 三级字体 */
+.three-font{
+
+}
+/* 四级字体 */
+.four-font{
+
+}
