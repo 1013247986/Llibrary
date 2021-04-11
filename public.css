@@ -1,4 +1,4 @@
-/* 取消所有标签自带的样式 ---------------------------------------------------*/
+﻿/* 取消所有标签自带的样式 ---------------------------------------------------*/
 *{
     margin: 0px;
     padding: 0px;
@@ -90,4 +90,22 @@ input[type="number"]{
 /* 四级字体 */
 .four-font{
 
+}
+/* 禁止选中和复制字体 */
+no-selection{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+/* 选中这个元素里所有的字体 */
+.selection-all {
+    user-select: all
+}
+/* 选中后的样式设置 只能设置color background text-shadow*/
+.selection-all::selection {
+    
+}
+/* 字体设置 font-family: system-ui 能够自动选择本操作系统下的默认系统字体。属于性能优化*/
+.font-system{
+    font-family: system-ui;
 }
