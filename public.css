@@ -48,9 +48,30 @@ input[type="number"]{
     align-items: center;
 }
 
-/* 鼠标变成点击的手 ---------------------------------------------------*/
-.cursor{
+/* 鼠标样式 ---------------------------------------------------*/
+/* 变成点击的手 */
+.pointer{
     cursor: pointer;
+}
+/* 变成禁止点击 */
+.pointer{
+    cursor: not-allowed;
+}
+/* 变成Loading状态 */
+.pointer{
+    cursor: wait;
+}    
+/* 图片查看器放大 */
+.pointer{
+    cursor: zoom-in;
+}
+/* 图片查看器缩小 */
+.pointer{
+    cursor: zoom-out;
+}
+/* 提示问号图标 */
+.pointer{
+    cursor: help;
 }
 
 /* 字体 --------------------------------------------------- 自定义 */
