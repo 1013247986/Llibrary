@@ -1,17 +1,3 @@
-﻿/* 取消所有标签自带的样式 ---------------------------------------------------*/
-*{
-    margin: 0px;
-    padding: 0px;
-}
-/* 取消input[type="number"]默认样式 */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-input[type="number"]{
-    -moz-appearance: textfield;
-}
-
 /* flex布局样式 ---------------------------------------------------*/
 .font-cen{
     text-align: center;
