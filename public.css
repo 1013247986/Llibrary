@@ -1,0 +1,97 @@
+/* flex布局样式 ---------------------------------------------------*/
+.font-cen{
+    text-align: center;
+}
+.font-right{
+    text-align: right;
+}
+.font-left{
+    text-align: left;
+}
+.header-h{
+    height: 64px;
+    line-height: 64px;
+}
+.flex{
+    display:flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.flex-bd-col{
+    flex: 1;
+}
+.flex-ju-be{
+    justify-content: space-between;
+}
+.flex-ju-cen{
+    justify-content: center;
+}
+.flex-ju-ar{
+    justify-content: space-around;
+}
+.flex-item-con{
+    align-items: center;
+}
+
+/* 鼠标样式 ---------------------------------------------------*/
+/* 变成点击的手 */
+.pointer{
+    cursor: pointer;
+}
+/* 变成禁止点击 */
+.pointer{
+    cursor: not-allowed;
+}
+/* 变成Loading状态 */
+.pointer{
+    cursor: wait;
+}    
+/* 图片查看器放大 */
+.pointer{
+    cursor: zoom-in;
+}
+/* 图片查看器缩小 */
+.pointer{
+    cursor: zoom-out;
+}
+/* 提示问号图标 */
+.pointer{
+    cursor: help;
+}
+
+/* 字体 --------------------------------------------------- 自定义 */
+/* 一级字体 */
+.first-font{
+   
+}
+/* 二级字体 */
+.secondary-font{
+
+}
+/* 三级字体 */
+.three-font{
+
+}
+/* 四级字体 */
+.four-font{
+
+}
+/* 禁止选中和复制字体 */
+no-selection{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+/* 选中这个元素里所有的字体 */
+.selection-all {
+    user-select: all
+}
+/* 选中后的样式设置 只能设置color background text-shadow*/
+.selection-all::selection {
+    
+}
+/* 字体设置 font-family: system-ui 能够自动选择本操作系统下的默认系统字体。属于性能优化*/
+.font-system{
+    font-family: system-ui;
+}
