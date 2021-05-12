@@ -13,15 +13,15 @@ class library {
             if (!Array.isArray(data)) throw "arrObjRemoval方法传入的不是数组"
             // 记录是否已经拥有
             let arry = [];
-            for (let i = 0; i < data.length; i++) {
+            data.forEach(item => {
                 // 判断是否已经拥有
-                if (arry.includes(data[i][key])) {
+                if (arry.includes(item[key])) {
                     data.splice(i, 1);
                     i--;
                     continue;
                 }
-                arry.push(data[i][key]);
-            }
+                arry.push(item[key]);
+            })
             return data;
         } catch (err) {
             console.error(err);
