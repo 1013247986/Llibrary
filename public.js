@@ -11,17 +11,23 @@ class library {
         try {
             // 判断是不是数组
             if (!Array.isArray(data)) throw "arrObjRemoval方法传入的不是数组"
-            // 记录是否已经拥有
+            key = key.split(',')
+            // 记录第一次出现得
             let arry = [];
-            for (let i = 0; i < data.length; i++) {
+            // 多个值去重
+            data.forEach(item => {
+                let _keys = ""
+                key.forEach(el => {
+                    _keys += item[el]
+                })
                 // 判断是否已经拥有
-                if (arry.includes(data[i][key])) {
+                if (arry.includes(_keys)) {
                     data.splice(i, 1);
                     i--;
-                    continue;
+                } else {
+                    arry.push(item[key]);
                 }
-                arry.push(data[i][key]);
-            }
+            })
             return data;
         } catch (err) {
             console.error(err);
