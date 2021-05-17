@@ -142,7 +142,44 @@ class library {
         let _text = Object.prototype.toString.call(data);
         return _text.replace(/(\[|\]|object)/g, '').trim();
     }
+    /** 给对象增加迭代器，可以使用for of 
+     * @param {Object} 数据
+     * @return {Object} 返回数据类型
+     * @version: 版本1.0.0
+     */
+     iterators(obj){
+        Object.defineProperty(obj, Symbol.iterator, {
+            enumerable: false,
+            writable: false,
+            configurable: true,
+            value: function() {
+                const _this = this
+                const keys = Object.keys(this)
+                let index = 0
+                return {
+                    next(){
+                        return {
+                            value: _this[keys[index++]],
+                            done: index>keys.length
+                        }
+                    }
+                }
+            }
+        });
+        return obj
+     }
 }
 let Collection = new library();
 
-export default Collection
+let _obj = {
+    a:'aaa',
+    b:'bbb',
+    c:'ccc',
+    d:'ddd',
+    e:'eee'
+}
+for(let value of Collection.iterators(_obj)){
+    console.log(value);
+}
+
+// export default Collection
