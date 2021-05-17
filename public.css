@@ -60,6 +60,17 @@
     cursor: help;
 }
 
+/* css2 垂直居中 */
+ver-bd-row{
+  height: 88px;
+}
+ver-bd-row::after{
+    display: inline-block;
+    content: "";
+    height: 100%;
+    vertical-align: middle;
+}
+
 /* 字体 --------------------------------------------------- 自定义 */
 /* 一级字体 */
 .first-font{
